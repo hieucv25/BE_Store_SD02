@@ -29,7 +29,12 @@ public class ThongBao {
     @Column(name="NgayGui")
     private LocalDateTime thoiGianGui;
 
-//    @ManyToOne
-//    @JoinColumn(name="IdDonHang")
+    @ManyToOne
+    @JoinColumn(name="IdDonHang")
+    private DonHang dh;
+
+    @ManyToOne
+    @JoinColumn(name="IdKhachHang")
+    private KhachHang kh;
 
 }

@@ -15,7 +15,6 @@ import java.util.List;
 
 
 @Controller
-@CrossOrigin(origins = "http://localhost:3000",allowedHeaders = "*",allowCredentials = "true")
 @RequestMapping("/api/v1/auth")
 @RestController
 public class AuthController {

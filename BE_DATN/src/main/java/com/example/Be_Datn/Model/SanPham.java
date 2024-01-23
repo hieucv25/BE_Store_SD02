@@ -44,35 +44,19 @@ public class SanPham {
     @Column(name="TrangThai")
     private int trangThai;
 
-    @Column(name="LinkAnh1")
-    private String linkSP1;
-
-    @Column(name="LinkAnh2")
-    private String linkSP2;
-
-    @Column(name="LinkAnh3")
-    private String linkSP3;
-
-    @Column(name="LinkAnh4")
-    private String linkSP4;
-
-    @Column(name="LinkAnh5")
-    private String linkSP5;
-
-    @Column(name="MauSac")
-    private String mauSac;
-
-    @Column(name="Size")
-    private int size;
-
     @Column(name="DanhMuc")
     private int danhMuc;
-
-    // các quan hệ
 
     @ManyToOne
     @JoinColumn(name="IdNhaCungCap")
     private NhaCungCap ncc;
 
+    @ManyToOne
+    @JoinColumn(name="IdTheLoai")
+    private TheLoai tl;
+
+    @ManyToOne
+    @JoinColumn(name="IdThuongHieu")
+    private ThuongHieu th;
 
 }
